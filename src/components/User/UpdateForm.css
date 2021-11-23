@@ -1,0 +1,69 @@
+.update {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    flex-wrap: wrap;
+}
+
+.update label {
+    padding-top: 10px;
+    color: #777;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.update #name,#email {
+    background: #f2f2f2;
+    border: 0;
+    width: 300px;
+    padding: 14px;
+    margin: auto;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    outline: none;
+    color: #777;
+}
+
+.update #name:focus,#email:focus {
+    border-bottom: 1px solid #7dd56f;
+}
+
+.update .pictures {
+    display: flex;
+    align-items: center;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.update .pictures .avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+.update .pictures input[type='file'] {
+    display: none;
+}
+
+.update .pictures .file {
+    color: rgb(125,213,111);
+    border-bottom: 1px solid #28b487;
+}
+
+.update .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.update .buttons .btn {
+    padding: 12px;
+    border: 0;
+    text-transform: uppercase;
+    border-radius: 12px;
+    background: #7dd56f;
+    color: #fff;
+    width: 150px;
+}

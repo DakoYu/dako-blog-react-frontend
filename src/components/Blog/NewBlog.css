@@ -1,0 +1,51 @@
+.create {
+    margin: auto;
+    width: 512px;
+    padding: 5%;
+}
+
+.create form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    border-radius: 12px;
+    width: 512px;
+    padding: 10%;
+}
+
+.create form label {
+    padding-top: 10px;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.create form input {
+    outline: none;
+    background-color: #f2f2f2;
+    padding: 12px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 12px;
+}
+
+.create form textarea {
+    resize: none;
+    outline: none;
+    background-color: #f2f2f2;
+    padding: 12px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 12px;
+}
+
+.create form button {
+    padding: 10px;
+    width: 80px;
+    margin-top: 5%;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+    background: #4CAF50;
+}
