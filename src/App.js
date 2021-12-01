@@ -18,6 +18,7 @@ function App() {
 
    useEffect(() => {
      if (cookies.get('jwt')) {
+       alert('test');
        AuthCtx.login();
      }
    }, [AuthCtx.userState.isLogged])
