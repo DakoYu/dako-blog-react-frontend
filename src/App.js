@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Cookies from 'universal-cookie';
 import Navbar from './components/Navbar';
