@@ -109,7 +109,7 @@ export const AuthProvider = props => {
                 };
             });
         }
-    }, );
+    }, []);
 
     return (
         <AuthContext.Provider value={{
