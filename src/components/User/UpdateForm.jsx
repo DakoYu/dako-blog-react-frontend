@@ -44,7 +44,7 @@ const UpdateForm = () => {
 
         await axios({
             method: 'PATCH',
-            url: 'http://127.0.0.1:8000/api/user/updateme',
+            url: 'http://ec2-13-58-232-63.us-east-2.compute.amazonaws.com/api/user/updateme',
             data: formData
         });
     };
