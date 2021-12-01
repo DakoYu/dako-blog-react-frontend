@@ -74,7 +74,7 @@ const UpdateForm = () => {
             <div className='pictures'>
                 <img 
                     className='avatar' 
-                    src={`http://127.0.0.1:8000/api/user/${authCtx.userState.user.id}/img`}
+                    src={`http://ec2-13-58-232-63.us-east-2.compute.amazonaws.com/api/user/${authCtx.userState.user.id}/img`}
                     alt='avatar'
                 />
                 <label className='file'>
