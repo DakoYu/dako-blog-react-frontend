@@ -28,7 +28,7 @@ const Blogs = () => {
     });
 
     const blogsHandler = async() => {
-        const url = 'http://127.0.0.1:8000/api/blog/';
+        const url = 'http://localhost:8000/api/blog/';
         const res = await axios.get(url);
         
         const data = res.data.blogs;
