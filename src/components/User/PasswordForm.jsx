@@ -25,7 +25,7 @@ const PasswordForm = () => {
     const passwordApi = async () => {
         const res = await axios({
             method: 'PATCH',
-            url: 'http://127.0.0.1:8000/api/user/updatepassword',
+            url: 'http://ec2-13-58-232-63.us-east-2.compute.amazonaws.com/api/user/updatepassword',
             data: {
                 token: authCtx.jwtToken,
                 currentPwd,
