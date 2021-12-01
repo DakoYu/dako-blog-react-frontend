@@ -23,7 +23,7 @@ const NewBlog = () => {
     const postHandler = async() => {
         await axios({
             method: 'POST',
-            url: 'http://127.0.0.1:8000/api/blog/create',
+            url: 'http://ec2-13-58-232-63.us-east-2.compute.amazonaws.com/api/blog/create',
             data: {
                 id: authCtx.userState.user.id,
                 title,
