@@ -15,7 +15,7 @@ const Blog = props => {
     const shownDate = new Date(newDate).toLocaleString('en-US', {month: 'long', year: 'numeric', day: 'numeric'});
 
     const deleteBlog = async () => {
-        const url = `http://127.0.0.1:8000/api/blog/${Id}`;
+        const url = `http://localhost:8000/api/blog/${Id}`;
         
         await axios.delete(url);
     };
@@ -39,7 +39,7 @@ const Blog = props => {
                 <li>
                     <img 
                     className='avatar' 
-                    src={`http://127.0.0.1:8000/api/user/${id}/img`}
+                    src={`http://localhost:8000/api/user/${id}/img`}
                     alt='avatar'
                     />
                 </li>
