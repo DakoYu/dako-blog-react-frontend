@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import Cookies from 'universal-cookie';
 import Navbar from './components/Navbar';
 import Login from './components/Login/Login';
 import Register from "./components/Register/Register";
@@ -10,7 +11,17 @@ import NewBlog from "./components/Blog/NewBlog";
 import './App.css';
 
 function App() {
-  const AuthCtx = useContext(AuthContext);
+    const AuthCtx = useContext(AuthContext);
+  
+    const cookies = new Cookies();
+  
+
+   useEffect(() => {
+     if (cookies.get('jwt')) {
+       AuthCtx.login();
+     }
+   }, [])
+  
 
   return (
     <React.Fragment>
