@@ -85,7 +85,7 @@ export const AuthProvider = props => {
     const validateToken = async (token) => {
         const res = await axios({
             method: 'post',
-            url: 'http://127.0.0.1:8000/api/validate',
+            url: 'http://ec2-13-58-232-63.us-east-2.compute.amazonaws.com/api/validate',
             data: {
                 token
             }
