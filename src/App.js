@@ -20,7 +20,7 @@ function App() {
      if (cookies.get('jwt')) {
        AuthCtx.login();
      }
-   }, [])
+   }, [AuthCtx.userState.isLogged])
   
 
   return (
