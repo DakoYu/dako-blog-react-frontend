@@ -92,7 +92,6 @@ export const AuthProvider = props => {
         });
 
         if (res.data.status === 'success') {
-            console.log(res.data)
             return res.data
         } else {
             return 'fail'
@@ -110,7 +109,7 @@ export const AuthProvider = props => {
                 };
             });
         }
-    }, []);
+    }, );
 
     return (
         <AuthContext.Provider value={{
